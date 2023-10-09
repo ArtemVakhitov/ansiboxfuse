@@ -24,6 +24,7 @@
       chdir: /src/boxfuse-sample-java-war-hello/
       executable: /bin/bash
       cmd: mvn package
+      creates: /src/boxfuse-sample-java-war-hello/target/hello-1.0.war
 
   - name: Fetch built WAR from build host
     fetch:
