@@ -29,6 +29,7 @@
     fetch:
       src: /src/boxfuse-sample-java-war-hello/target/hello-1.0.war
       dest: /tmp/hello-1.0.war
+      flat: yes
 
 - name: Launch boxfuse app in tomcat
   hosts: app
