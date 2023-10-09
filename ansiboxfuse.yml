@@ -41,11 +41,11 @@
       state: present
 
   - name: Copy built WAR to app host
-      copy:
-        src: /tmp/hello-1.0.war
-        dest: /var/lib/tomcat8/webapps/
+    copy:
+      src: /tmp/hello-1.0.war
+      dest: /var/lib/tomcat8/webapps
 
   - name: Ensure tomcat is up and running
-      service:
-        name: tomcat8
-        state: started
+    service:
+      name: tomcat8
+      state: started
